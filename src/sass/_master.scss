@@ -6,6 +6,6 @@ body{
   // display: grid;
   // grid-template-columns: repeat(3, 1fr);
   margin: auto;
-  width: (18em * 4 + 3*0.625em);
+  width: ($card-width * 4 + 3*$gap);
   gap: $gap;
 }
