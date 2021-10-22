@@ -53,14 +53,14 @@ table {
   border-spacing: 0;
 }
 
-.card {
-  width: 18rem;
+.card,
+.add-new-page-element {
+  -webkit-box-shadow: 6px 12px 15px 3px rgba(0, 0, 0, 0.17);
+  box-shadow: 6px 12px 15px 3px rgba(0, 0, 0, 0.17);
 }
 
-.card-img-top {
-  aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
+main {
+  padding: 100px 0;
 }
 
 body {
