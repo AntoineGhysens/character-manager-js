@@ -1,11 +1,67 @@
-body{
-  font-size: 16px;
+.main-page{
+  background-image: linear-gradient(to right, #645097, #d7555d);
+  min-height: 450px;
+}
+.main-page h1{
+  display: inline-block;
+}
+.main-page-header{
+  // height: 15vh;
+  // position: sticky;
+  // top: 0;
+  padding: 5vh 0vh 3vh;
+  z-index: 999;
+  width: 85vw;
+  margin: 0 auto 5vh;
+  // margin-bottom: 5vh;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.main-page-header{
+  color: white;
+}
+.searchbar-main-page{
+  border-radius: 0.5em;
+  padding: 0.5em;
+  border: none;
+}
+.all-characters
+{
+  margin: auto;
+}
+  .all-characters{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   // display: grid;
   // grid-template-columns: repeat(3, 1fr);
-  margin: auto;
-  width: ($card-width * 4 + 3*$gap);
-  gap: $gap;
+    width: ($card-width * 4 + 3*$gap);
+    gap: $gap;
+}
+
+.card{
+  width: 18rem;
+  &-img-top{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+
+.add-new-main-page{
+  text-align: center;
+  padding: 1em;
+  margin: 6vh auto 4vh;
+}
+.add-new-page-element{
+  padding: 1em 3em;
+  background-color: #4b7cfc;
+  color: white;
+  border-radius: 0.5em;
+  a:visited{
+    color: white;
+  }
 }
