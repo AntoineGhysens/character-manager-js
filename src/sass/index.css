@@ -140,7 +140,7 @@ table {
   color: white;
 }
 
-.mainAdd {
+main {
   padding: 100px 0;
 }
 
@@ -271,7 +271,9 @@ body .texte .longDescription {
   border-radius: 5px;
   font-size: 17px;
   color: grey;
-  padding: 10px 0 250px 15px;
+  padding: 0 0 250px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body .changes {
@@ -338,4 +340,4 @@ body .changes .buttonDelete:active {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=index.css.map */

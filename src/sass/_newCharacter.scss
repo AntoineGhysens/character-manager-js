@@ -1,4 +1,4 @@
-main {
+.mainAdd {
     padding: 100px 0;
 }
 
@@ -101,6 +101,7 @@ body {
     margin: auto;
     margin-bottom: 300px;
 
+
     .longDescription {
       height: 300px;
       width: 800px;
@@ -108,10 +109,11 @@ body {
       border-radius: 5px;
       font-size: 17px;
       color: grey;
-      padding: 0 0 250px 15px;
-      box-sizing: border-box;
+      padding: 10px 0 250px 15px;
+      
+   
     }
-  }
+}
 
   .changes {
     height: 100px;
