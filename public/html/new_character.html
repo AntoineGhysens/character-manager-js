@@ -10,12 +10,69 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./src/sass/main.min.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../../src/sass/main.css" />
+
+    <title>New Charachter</title>
   </head>
   <body>
-    <main class="all-characters">
-      
+    <main>
+      <div class="title">New Charachter</div>
+
+      <div class="container">
+        <div class="image">
+          <div class="uploadImage">
+            <p class="contentImage">Upload Image</p>
+          </div>
+          <div class="preview">Preview</div>
+        </div>
+
+        <div class="name">
+          <input
+            class="nameCharachter"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+          />
+        </div>
+
+        <div class="description">
+          <input
+            class="shortdescription"
+            type="text"
+            id="placeDescription"
+            name="shortDescription"
+            placeholder="Short Description"
+          />
+        </div>
+
+        <div class="markdown">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="texte">
+          <input
+            class="longDescription"
+            type="text"
+            id="longDescription"
+            name="longDescription"
+            placeholder="Long Description"
+          />
+        </div>
+
+        <div class="changes">
+          <button class="buttonChanges">Saves changes</button>
+          <button class="buttonDelete">Delete Charachter</button>
+        </div>
+      </div>
     </main>
   </body>
 </html>

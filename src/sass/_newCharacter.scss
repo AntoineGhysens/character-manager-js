@@ -1,0 +1,167 @@
+body {
+  background-image: linear-gradient(to right, #645097, #d7555d);
+  font-family: "Orbitron";
+
+  .title {
+    text-align: left;
+    font-size: 50px;
+    color: white;
+    border-bottom: 5px solid white;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gap;
+    width: 1000px;
+    height: 1400px;
+    background-image: linear-gradient(
+      to right,
+      rgb(180, 176, 176),
+      rgb(83, 74, 74)
+    );
+    border-radius: 8px;
+    box-shadow: 10px 5px 5px black;
+
+    .image {
+      text-align: center;
+      vertical-align: center;
+      margin-top: 400px;
+
+      .uploadImage {
+        margin: auto;
+        width: 250px;
+        height: 250px;
+        background-image: linear-gradient(to right, #645097, #d7555d);
+        border-color: 3px solid black;
+        border-radius: 100px;
+
+        .contentImage {
+          font-size: 20px;
+          color: white;
+          position: absolute;
+          margin-top: 100px;
+          margin-left: 50px;
+        }
+      }
+
+      .preview {
+        font-size: 30px;
+        color: white;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .name {
+    height: 100px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+
+    .nameCharachter {
+      height: 50px;
+      width: 800px;
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: 17px;
+      color: grey;
+    }
+  }
+
+  .description {
+    height: 100px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    .shortdescription {
+      height: 50px;
+      width: 800px;
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: 17px;
+      color: grey;
+    }
+  }
+
+  .texte {
+    height: 100px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 300px;
+
+    .longDescription {
+      height: 300px;
+      width: 800px;
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: 17px;
+      color: grey;
+      padding: 0 0 250px 15px;
+      box-sizing: border-box;
+    }
+  }
+
+  .changes {
+    height: 100px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 800px;
+
+    .buttonChanges {
+      margin: 0 1em;
+      border: 0;
+      line-height: 2.5;
+      padding: 17px 40px;
+      font-size: 15px;
+      text-transform: capitalize;
+      text-align: center;
+      color: #fff;
+      border-radius: 5px;
+      background-color: #645097;
+      font-weight: 600;
+
+      &:hover {
+        background-color: black;
+      }
+
+      &:active {
+        background-color: black;
+        box-shadow: grey;
+        transform: translateY(4px);
+      }
+    }
+    .buttonDelete {
+      margin: 0 1em;
+      border: 0;
+      line-height: 2.5;
+      padding: 17px 40px;
+      font-size: 15px;
+      text-transform: capitalize;
+      text-align: center;
+      color: #fff;
+      border-radius: 5px;
+      background-color: #d7555d;
+      font-weight: 600;
+
+      &:hover {
+        background-color: black;
+      }
+
+      &:active {
+        background-color: black;
+        box-shadow: 0 5px, grey;
+        transform: translateY(4px);
+      }
+    }
+  }
+}
