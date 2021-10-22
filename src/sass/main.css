@@ -155,6 +155,7 @@ body .title {
   font-size: 50px;
   color: white;
   border-bottom: 5px solid white;
+  margin-bottom: 20px;
 }
 
 body .container {
@@ -174,8 +175,8 @@ body .container {
   background-image: -webkit-gradient(linear, left top, right top, from(#b4b0b0), to(#534a4a));
   background-image: linear-gradient(to right, #b4b0b0, #534a4a);
   border-radius: 8px;
-  -webkit-box-shadow: 10px 5px 5px black;
-          box-shadow: 10px 5px 5px black;
+  -webkit-box-shadow: 10px 5px 5px #383737;
+          box-shadow: 10px 5px 5px #383737;
 }
 
 body .container .image {
