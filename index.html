@@ -11,9 +11,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/sass/main.min.css" />
-    <title>Document</title>
+    <title>Character manager</title>
   </head>
-  <body>
+  <body class="main-page">
+    <header class="main-page-header">
+      <h1 class="main-page-heading">Character manager</h1><input type="text" name="charsearch" placeholder="search for characters" class="searchbar-main-page">
+    </header>
     <main class="all-characters">
       <div class="card">
         <img
@@ -69,7 +72,7 @@
       </div>
     </main>
     <div class="add-new-main-page">
-
+      <span class="add-new-page-element"><a href="./public/html/new_character.html">Go to "add character" page</a></span>
     </div>
   </body>
 </html>
