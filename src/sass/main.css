@@ -155,6 +155,7 @@ body .title {
   font-size: 50px;
   color: white;
   border-bottom: 5px solid white;
+  margin-bottom: 50px;
 }
 
 body .container {
@@ -181,31 +182,78 @@ body .container {
 body .container .image {
   text-align: center;
   vertical-align: center;
-  margin-top: 400px;
+  margin-top: 450px;
 }
 
-body .container .image .uploadImage {
-  margin: auto;
-  width: 250px;
-  height: 250px;
+body .container .image .center {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .image .form-input {
+  width: 350px;
+  padding: 20px;
   background-image: -webkit-gradient(linear, left top, right top, from(#645097), to(#d7555d));
   background-image: linear-gradient(to right, #645097, #d7555d);
-  border-color: 3px solid black;
-  border-radius: 100px;
+  -webkit-box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377), 3px 3px 7px rgba(94, 104, 121, 0.377);
+          box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377), 3px 3px 7px rgba(94, 104, 121, 0.377);
 }
 
-body .container .image .uploadImage .contentImage {
-  font-size: 20px;
-  color: white;
-  position: absolute;
-  margin-top: 100px;
+body .container .image .form-input img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-image: cover;
+  display: none;
+  margin-bottom: 5px;
   margin-left: 50px;
 }
 
-body .container .image .preview {
-  font-size: 30px;
-  color: white;
-  margin-top: 15px;
+body .container .image .form-input input {
+  display: none;
+}
+
+body .container .image .form-input label {
+  display: block;
+  width: 70%;
+  height: 45px;
+  margin-left: 15%;
+  margin-top: 130px;
+  line-height: 50px;
+  text-align: center;
+  background: #844bee;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Orbitron";
+  text-transform: Uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body .container .image .form-input label:hover {
+  background-color: black;
+}
+
+body .container .image .form-input label:active {
+  background-color: black;
+  -webkit-box-shadow: 0 5px, grey;
+          box-shadow: 0 5px, grey;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 body .name {

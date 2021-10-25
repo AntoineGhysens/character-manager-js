@@ -11,6 +11,7 @@ body {
     font-size: 50px;
     color: white;
     border-bottom: 5px solid white;
+    margin-bottom: 50px;
   }
 
   .container {
@@ -31,29 +32,66 @@ body {
     .image {
       text-align: center;
       vertical-align: center;
-      margin-top: 400px;
+      margin-top: 450px;
 
-      .uploadImage {
-        margin: auto;
-        width: 250px;
-        height: 250px;
-        background-image: linear-gradient(to right, #645097, #d7555d);
-        border-color: 3px solid black;
-        border-radius: 100px;
-
-        .contentImage {
-          font-size: 20px;
-          color: white;
-          position: absolute;
-          margin-top: 100px;
-          margin-left: 50px;
+        .center {
+          height:100%;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+        
         }
-      }
+        .form-input {
+          width:350px;
+          padding:20px;
+          background-image:linear-gradient(to right, #645097, #d7555d);
+          box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+              3px 3px 7px rgba(94, 104, 121, 0.377);
+        }
 
-      .preview {
-        font-size: 30px;
-        color: white;
-        margin-top: 15px;
+        .form-input img {
+          display: flex;
+          justify-content: center;
+          width: 200px;
+          height: 200px;
+          background-image: cover;
+          display:none;
+          margin-bottom: 5px;
+          margin-left: 50px;
+
+        }
+
+        .form-input input {
+          display:none;
+        }
+        
+        .form-input label {
+          display:block;
+          width:70%;
+          height:45px;
+          margin-left: 15%;
+          margin-top: 130px;
+          line-height:50px;
+          text-align:center;
+          background:#844bee;
+          color:#fff;
+          font-size:17px;
+          font-family:"Orbitron";
+          text-transform:Uppercase;
+          font-weight:600;
+          border-radius:5px;
+          cursor:pointer;
+
+          &:hover {
+            background-color: black;
+          }
+    
+          &:active {
+            background-color: black;
+            box-shadow: 0 5px, grey;
+            transform: translateY(4px);
+        }
+        
       }
     }
   }
@@ -170,4 +208,5 @@ body {
       }
     }
   }
+
 }
