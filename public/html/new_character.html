@@ -20,11 +20,37 @@
 
       <div class="container">
         <div class="image">
-          <div class="uploadImage">
-            <p class="contentImage">Upload Image</p>
-          </div>
-          <div class="preview">Preview</div>
+      
+            <div class="center">
+              <div class="form-input">
+                <div class="preview">
+                  <img id="file-ip-1-preview">
+                </div>
+                <label for="file-ip-1">Upload Image</label>
+                <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                <img id="preview"></img>
+              </div>
+            </div> 
+          
+            <script type="text/javascript">
+              function showPreview(event){
+              if(event.target.files.length > 0){
+                let src = URL.createObjectURL(event.target.files[0]);
+                let preview = document.getElementById("file-ip-1-preview");
+                preview.src = src;
+                preview.style.display = "block";
+              }
+            }
+            </script>
+         
         </div>
+
+        
+
+
+
+
+
 
         <div class="name">
           <input
@@ -52,8 +78,13 @@
             type="text"
             id="longDescription"
             name="longDescription"
+<<<<<<< HEAD
             placeholder="Long Description">
           </textarea>
+=======
+            placeholder="Long Description"
+          ></textarea>
+>>>>>>> Francis
         </div>
 
         <div class="changes">
