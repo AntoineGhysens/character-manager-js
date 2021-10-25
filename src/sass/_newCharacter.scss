@@ -11,7 +11,11 @@ body {
     font-size: 50px;
     color: white;
     border-bottom: 5px solid white;
+<<<<<<< HEAD
+    margin-bottom: 20px;
+=======
     margin-bottom: 50px;
+>>>>>>> Francis
   }
 
   .container {
@@ -27,7 +31,7 @@ body {
       rgb(83, 74, 74)
     );
     border-radius: 8px;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 5px 5px rgb(56, 55, 55);
 
     .image {
       text-align: center;
