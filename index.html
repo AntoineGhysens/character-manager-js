@@ -13,41 +13,16 @@
     <link rel="stylesheet" href="./src/sass/main.min.css" />
     <title>Character manager</title>
   </head>
+
   <body class="main-page">
+
     <header class="main-page-header">
       <h1 class="main-page-heading">Character manager</h1><input type="text" name="charsearch" placeholder="search for characters" class="searchbar-main-page">
     </header>
+
     <main class="all-characters">
-      <div class="card">
-        <img src="./public/images/angAvatar.png"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="./public/images/avatar2.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
+
+      <template class="card">
         <img src="..." class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -57,21 +32,23 @@
           </p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+      </template>
+
+      
     </main>
+
     <div class="add-new-main-page">
       <span class="add-new-page-element"><a href="./public/html/new_character.html">Go to "add character" page</a></span>
     </div>
+
+    <button class="run" id="run">Run</button>
+
+    
   </body>
+
+
+  
+      
+
+
 </html>
