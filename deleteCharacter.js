@@ -1,5 +1,5 @@
 (() => {
-    const input = document.querySelector("#hero-id")
+    const input = document.querySelector("card")
 
     document.querySelector('#run').addEventListener("click", async () => {
         try {
@@ -15,3 +15,5 @@
         }
     });
 })();
+
+
