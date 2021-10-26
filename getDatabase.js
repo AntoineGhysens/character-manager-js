@@ -67,48 +67,6 @@ const tpl = document.querySelector("#tpl-card");
 const target = document.querySelector("#target");
 
 (() => {
-<<<<<<< HEAD
-      const success = () => {
-      console.log(
-        "%c ADD WITH SUCCESS ! ",
-        "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113);"
-      );
-    };
-  
-    const error = () => {
-        console.log('%c Error', 'font-weight: bold; font-size: 50px; color: red')
-    }
-  
-    const inputName = document.querySelector("#name");
-    const inputAlterEgo = document.querySelector("#placeDescription");
-    const inputPower = document.querySelector("#hero-powers");
-  
-    document.querySelector("#run").addEventListener("click", async () => {
-      try {
-        let abilities = inputPower.value.split(",");
-        const res = await fetch("http://character-database.becode.xyz/characters", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: inputName.value,
-            alterEgo: inputAlterEgo.value,
-            abilities: abilities,
-          }),
-        });
-        if(!res.ok) throw new Error(res.statusText)
-        const getAll = await fetch("http://character-database.becode.xyz/characters");
-        if(!getAll.ok) throw new Error(getAll.statusText)
-        success();
-        console.log(await getAll.json());
-      } catch (err) {
-          error()
-          console.error('Something went WRONG !',err);
-      }
-    });
-  })();
-=======
 
     document.querySelector("#run").addEventListener("click", async () => {
       const response = await fetch("https://character-database.becode.xyz/characters");
@@ -120,10 +78,13 @@ const target = document.querySelector("#target");
         let clone = document.importNode(tpl.content, true);
         clone.querySelector(".name").textContent = character.name
         clone.querySelector(".short-description").textContent = character.shortDescription
+        clone.querySelector(".card-img").src = "data:image/png;base64, " + character.image
         target.appendChild(clone)
       });
     })
   })();
+
+  // <img class="card-img" src="data:image/png;base64, ... " alt="Red dot" />
 
 // const dbChar = await response.json()
 //
@@ -142,4 +103,3 @@ const target = document.querySelector("#target");
       //   clone.querySelector(".powers").textContent = hero.abilities;
       //   target.appendChild(clone)
       // });
->>>>>>> 276fb8af91c267d3b9b9a211974ca31186899885
