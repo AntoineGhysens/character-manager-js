@@ -78,10 +78,13 @@ const target = document.querySelector("#target");
         let clone = document.importNode(tpl.content, true);
         clone.querySelector(".name").textContent = character.name
         clone.querySelector(".short-description").textContent = character.shortDescription
+        clone.querySelector(".card-img").src = "data:image/png;base64, " + character.image
         target.appendChild(clone)
       });
     })
   })();
+
+  // <img class="card-img" src="data:image/png;base64, ... " alt="Red dot" />
 
 // const dbChar = await response.json()
 //
