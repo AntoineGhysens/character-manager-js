@@ -18,9 +18,9 @@
     <main class="mainAdd">
       <div class="title">New Charachter</div>
 
-      <div class="container">
+      <form class="container">
+
         <div class="image">
-      
             <div class="center">
               <div class="form-input">
                 <div class="preview">
@@ -28,24 +28,18 @@
                 </div>
                 <label for="file-ip-1">Upload Image</label>
                 <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
-                <img id="preview"></img>
               </div>
             </div> 
         </div>
 
-        
+     
 
-
-
-
-
-
-        <div class="name">
+        <div class="new-character-name">
           <input
             class="nameCharachter"
             type="text"
-            id="name"
-            name="name"
+            id="new-character-name"
+            name="new-character-name"
             placeholder="Name"
           />
         </div>
@@ -54,7 +48,7 @@
           <input
             class="shortdescription"
             type="text"
-            id="placeDescription"
+            id="shortDescription"
             name="shortDescription"
             placeholder="Short Description"
           />
@@ -71,10 +65,19 @@
         </div>
 
         <div class="changes">
-          <button class="buttonChanges">Saves changes</button>
-          <button class="buttonDelete">Delete Charachter</button>
+          <button class="buttonChanges" id="buttonChanges">Saves changes</button>
         </div>
-      </div>
+
+    
+  
+       </form>
+
     </main>
   </body>
+
+  <script src="../../scriptUploadImage.js" type="text/javascript"></script>
+
+  <script src="../../addCharacter.js" type="text/javascript"></script>
+
+
 </html>

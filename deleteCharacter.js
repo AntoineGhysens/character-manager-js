@@ -1,7 +1,7 @@
 (() => {
-    const input = document.querySelector("card")
+    const input = document.querySelector("#tpl-card")
 
-    document.querySelector('#run').addEventListener("click", async () => {
+    document.querySelector('#buttonDelete').addEventListener("click", async () => {
         try {
             const response = await fetch("http://character-database.becode.xyz/characters"+input.value, {
                 method: 'DELETE'

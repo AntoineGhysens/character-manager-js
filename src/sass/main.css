@@ -53,7 +53,6 @@ table {
   border-spacing: 0;
 }
 
-.card,
 .add-new-page-element {
   -webkit-box-shadow: 6px 12px 15px 3px rgba(0, 0, 0, 0.17);
   box-shadow: 6px 12px 15px 3px rgba(0, 0, 0, 0.17);
@@ -115,6 +114,7 @@ table {
 
 .card {
   width: 18rem;
+  border: none;
 }
 
 .card-img-top {
@@ -155,7 +155,7 @@ body .title {
   font-size: 50px;
   color: white;
   border-bottom: 5px solid white;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 body .container {
@@ -175,8 +175,8 @@ body .container {
   background-image: -webkit-gradient(linear, left top, right top, from(#b4b0b0), to(#534a4a));
   background-image: linear-gradient(to right, #b4b0b0, #534a4a);
   border-radius: 8px;
-  -webkit-box-shadow: 10px 5px 5px black;
-          box-shadow: 10px 5px 5px black;
+  -webkit-box-shadow: 10px 5px 5px #383737;
+          box-shadow: 10px 5px 5px #383737;
 }
 
 body .container .image {
@@ -256,7 +256,7 @@ body .container .image .form-input label:active {
           transform: translateY(4px);
 }
 
-body .name {
+body .new-character-name {
   height: 100px;
   width: 800px;
   display: -webkit-box;
@@ -269,7 +269,7 @@ body .name {
   margin-top: 50px;
 }
 
-body .name .nameCharachter {
+body .new-character-name .nameCharachter {
   height: 50px;
   width: 800px;
   padding: 1rem;
