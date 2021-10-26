@@ -18,17 +18,18 @@
   <body class="main-page">
 
     <header class="main-page-header">
-      <h1 class="main-page-heading">Character manager</h1><input type="text" name="charsearch" placeholder="search for characters" class="searchbar-main-page">
+      <h1 class="main-page-heading">Character manager</h1>
+      <!-- <input type="text" name="charsearch" placeholder="search for characters" class="searchbar-main-page"> -->
     </header>
 
-    <main class="all-characters">
+    <main>
       <template id="tpl-card">
-        <li class="card">
-          <img class="card-img">
+        <li class="card" id="all-characters">
+          <img class="card-img" alt="image not found">
           <h2 class="name"></h2>
-          <p class="short-description"></p>
+          <p class="card-short-description"></p>
           <p></p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="card-btn btn btn-primary">Go somewhere</a>
         </li>
       </template>
       <ul id="target" class="all-characters"></ul>
@@ -38,8 +39,8 @@
       <span class="add-new-page-element"><a href="#" id="run">Go to "add character" page</a></span>
     </div> -->
 
-    <button class="run" id="run">Run</button>
-
+    <!-- <button class="run" id="run">Run</button> -->
+    <script src="getColumns.js" charset="utf-8"></script>
     <script src="getDatabase.js" charset="utf-8"></script>
   </body>
 </html>
