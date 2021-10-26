@@ -67,7 +67,6 @@ const tpl = document.querySelector("#tpl-card");
 const target = document.querySelector("#target");
 
 (() => {
-<<<<<<< HEAD
       const success = () => {
       console.log(
         "%c ADD WITH SUCCESS ! ",
@@ -108,38 +107,3 @@ const target = document.querySelector("#target");
       }
     });
   })();
-=======
-
-    document.querySelector("#run").addEventListener("click", async () => {
-      const response = await fetch("https://character-database.becode.xyz/characters");
-      const output = await response.json()
-      const allChars = output
-      console.log(response)
-      console.log(allChars)
-      allChars.forEach(character => {
-        let clone = document.importNode(tpl.content, true);
-        clone.querySelector(".name").textContent = character.name
-        clone.querySelector(".short-description").textContent = character.shortDescription
-        target.appendChild(clone)
-      });
-    })
-  })();
-
-// const dbChar = await response.json()
-//
-//       let n = dbChar.length
-//       dbChar.forEach(character => {
-//         let clone = document.importNode(tpl.content, true);
-//         clone.querySelector(".name").textContent = character.name
-
-      // for(i = 1; i <= n; i++){
-      //   clone.querySelector(".name").textContent = hero.name
-      // }
-      // output.forEach(hero => {
-      //   let clone = document.importNode(tpl.content, true);
-      //   clone.querySelector(".name").textContent = hero.name;
-      //   clone.querySelector(".alter-ego").textContent = hero.alterEgo;
-      //   clone.querySelector(".powers").textContent = hero.abilities;
-      //   target.appendChild(clone)
-      // });
->>>>>>> 276fb8af91c267d3b9b9a211974ca31186899885
