@@ -18,60 +18,25 @@
       <h1 class="main-page-heading">Character manager</h1><input type="text" name="charsearch" placeholder="search for characters" class="searchbar-main-page">
     </header>
     <main class="all-characters">
-      <div class="card">
-        <img src="./public/images/angAvatar.png"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+      <template id="tpl-card" class="card">
+        <li class="card">
+          <img class="card-img">
+          <h2 class="name"></h2>
+          <p class="short-description"></p>
+          <p></p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="./public/images/avatar2.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+        </li>
           <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+        </div> -->
+      </template>
+      <ul id="target" class="all-characters"></ul>
+      <!-- <div class="">
+        <img class="card-img" src="data:image/png;base64, ... " alt="Red dot" />
+      </div> -->
     </main>
     <div class="add-new-main-page">
-      <span class="add-new-page-element"><a href="./public/html/new_character.html">Go to "add character" page</a></span>
+      <span class="add-new-page-element"><a href="#" id="run">Go to "add character" page</a></span>
     </div>
+    <script src="getDatabase.js" charset="utf-8"></script>
   </body>
 </html>

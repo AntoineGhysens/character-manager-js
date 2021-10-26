@@ -11,11 +11,8 @@ body {
     font-size: 50px;
     color: white;
     border-bottom: 5px solid white;
-<<<<<<< HEAD
     margin-bottom: 20px;
-=======
     margin-bottom: 50px;
->>>>>>> Francis
   }
 
   .container {
@@ -43,7 +40,7 @@ body {
           display:flex;
           align-items:center;
           justify-content:center;
-        
+
         }
         .form-input {
           width:350px;
@@ -68,7 +65,7 @@ body {
         .form-input input {
           display:none;
         }
-        
+
         .form-input label {
           display:block;
           width:70%;
@@ -89,13 +86,13 @@ body {
           &:hover {
             background-color: black;
           }
-    
+
           &:active {
             background-color: black;
             box-shadow: 0 5px, grey;
             transform: translateY(4px);
         }
-        
+
       }
     }
   }
@@ -152,8 +149,8 @@ body {
       font-size: 17px;
       color: grey;
       padding: 10px 0 250px 15px;
-      
-   
+
+
     }
 }
 
