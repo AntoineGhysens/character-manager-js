@@ -10,14 +10,14 @@
         console.log('%c Error', 'font-weight: bold; font-size: 50px; color: red')
     }
   
-    const inputName = document.querySelector("#hero-name");
-    const inputAlterEgo = document.querySelector("#hero-alter-ego");
+    const inputName = document.querySelector("#name");
+    const inputAlterEgo = document.querySelector("#placeDescription");
     const inputPower = document.querySelector("#hero-powers");
   
     document.querySelector("#run").addEventListener("click", async () => {
       try {
         let abilities = inputPower.value.split(",");
-        const res = await fetch("http://localhost:3000/heroes", {
+        const res = await fetch("http://character-database.becode.xyz/characters", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -29,7 +29,7 @@
           }),
         });
         if(!res.ok) throw new Error(res.statusText)
-        const getAll = await fetch("http://localhost:3000/heroes");
+        const getAll = await fetch("http://character-database.becode.xyz/characters");
         if(!getAll.ok) throw new Error(getAll.statusText)
         success();
         console.log(await getAll.json());

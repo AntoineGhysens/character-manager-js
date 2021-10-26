@@ -1,5 +1,5 @@
 (() => {
-    const tpl = document.querySelector("#tpl-hero");
+    const tpl = document.querySelector("#tpl-card");
     const target = document.querySelector("#target");
     const heroID = document.querySelector("#hero-id")
 
