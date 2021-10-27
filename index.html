@@ -31,7 +31,7 @@
           <p class="card-description"></p>
           <button type="button" class="card-btn btn btn-primary" name="button">See Character</button>
           <!-- <input onclick="return myConfirm();" id="delete" type="submit" name="deleteYear" class="btn btn-danger" value="Delete"> -->
-          <input id="delete" type="submit" name="deleteYear" class="btn-danger" value="Delete">
+          <button onclick="return confirm('Are you sure you want to delete?');"id="delete" type="submit" name="deleteYear" class="btn btn-danger" value="Delete">Delete
           <!-- <button type="button" class="card-btn" name="button">See Character</button> -->
         </li>
       </template>
@@ -42,8 +42,7 @@
     </div>
     <script src="getColumns.js" charset="utf-8"></script>
     <script src="getDatabase.js" charset="utf-8"></script>
-    <!-- <script src="getDatabase0.js" charset="utf-8"></script> -->
     <script src="deleteCharacter.js" charset="utf-8"></script>
-    <script src="onButtonClick.js" charset="utf-8"></script>
+    
   </body>
 </html>
