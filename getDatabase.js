@@ -20,12 +20,18 @@ const cardGen = (array) => {
 }
 
 
-
 const displayDB = async () => {
   const response = await fetch("https://character-database.becode.xyz/characters");
   const output = await response.json()
   const allChars = output
   cardGen(allChars)
+  let charIndex = 0
+  // let currentItem = ce sur quoi je clique
+  // loop previousElementSibling == null
+  if(currentItem.previousElementSibling == null){
+    charIndex += 1
+    currentItem = currentItem.previousElementSibling
+  }
   const btn0 = document.querySelector("#btn-0")
   // const btn = document.querySelectorAll(".card-btn")
   // console.log(btn)
