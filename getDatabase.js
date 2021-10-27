@@ -7,28 +7,52 @@ const displayDB = async () => {
   const response = await fetch("https://character-database.becode.xyz/characters");
   const output = await response.json()
   const allChars = output
-  console.log(response)
+  // console.log(response)
   console.log(allChars)
-
-  // flag get db start
 
   allChars.forEach(character => {
     let clone = document.importNode(tpl.content, true);
     clone.querySelector(".name").textContent = character.name
     clone.querySelector(".card-short-description").textContent  = character.shortDescription
+    clone.querySelector(".card-description").textContent  = character.description
     clone.querySelector(".card-img").src = "data:image/png;base64, " +character.image
     clone.querySelector(".card-img").alt =
 ` image for
  ${character.name}
  not found`
+    clone.children[0].id = character.id
     target.appendChild(clone)
   });
-
-  // flag get db end
-
 }
 
+const button = document.querySelector(".card-btn")
+
 displayDB()
+
+console.log(document.querySelector(".card-btn"))
+
+// const funk = () => {
+//   return 1
+// }
+//
+// if(button.onclick){
+//   console.log(funk())
+// }
+//
+// const onButtonPress = (element) => {
+//   if(element){
+//     return true
+//   }
+// }
+//
+// const expandItem = (element) => {
+//   if(onButtonPress(element)){
+//     console.log("hello world")
+//   }
+// }
+//
+// expandItem(button)
+
   // console.log(currentMainWidth)
   // let calculatedColumns = 1
   // let width = 100
