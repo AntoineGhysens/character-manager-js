@@ -1,34 +1,74 @@
-// import variables from '/src/sass/_variables.scss'
-
 const tpl = document.querySelector("#tpl-card");
 const target = document.querySelector("#target");
+const cardGen = (array) => {
+  let index = 0
+  array.forEach(character => {
+    const cardContent = document.importNode(tpl.content, true);
+    cardContent.querySelector(".name").textContent = character.name
+    cardContent.querySelector(".card-short-description").textContent  = character.shortDescription
+    cardContent.querySelector(".card-description").textContent  = character.description
+    cardContent.querySelector(".card-img").src = "data:image/png;base64, " +character.image
+    cardContent.querySelector(".card-img").alt =
+` image for
+ ${character.name}
+ not found`
+    cardContent.children[0].id = character.id
+    cardContent.children[0].children[4].id = `btn-${index}`
+    index += 1
+    target.appendChild(cardContent)
+  })
+}
+
+
 
 const displayDB = async () => {
   const response = await fetch("https://character-database.becode.xyz/characters");
   const output = await response.json()
   const allChars = output
-  console.log(response)
-  console.log(allChars)
-
-  // flag get db start
-
-  allChars.forEach(character => {
-    let clone = document.importNode(tpl.content, true);
-    clone.querySelector(".name").textContent = character.name
-    clone.querySelector(".card-short-description").textContent  = character.shortDescription
-    clone.querySelector(".card-img").src = "data:image/png;base64, " +character.image
-    clone.querySelector(".card-img").alt =
-` image for
- ${character.name}
- not found`
-    target.appendChild(clone)
+  cardGen(allChars)
+  const btn0 = document.querySelector("#btn-0")
+  // const btn = document.querySelectorAll(".card-btn")
+  // console.log(btn)
+  // const btnIndex = (i) => {
+  //   return btn[i].id.slice(4)
+    // btn[1].id.slice(4)
+  // }
+  // console.log(parseInt(btn[1].id.slice(4)))
+  btn0.addEventListener("click", async() => {
+    const selectedCard =  document.importNode(btn0.parentElement, true)
+    target.appendChild(selectedCard)
+  // btn.addEventListener("click", async() => {
+    // var classList =
+    // const selectedCard =  document.importNode(btn.parentElement, true)
+    // console.log(btn0.parentElement)
   });
-
-  // flag get db end
-
 }
 
 displayDB()
+
+
+// const funk = () => {
+//   return 1
+// }
+//
+// if(button.onclick){
+//   console.log(funk())
+// }
+//
+// const onButtonPress = (element) => {
+//   if(element){
+//     return true
+//   }
+// }
+//
+// const expandItem = (element) => {
+//   if(onButtonPress(element)){
+//     console.log("hello world")
+//   }
+// }
+//
+// expandItem(button)
+
   // console.log(currentMainWidth)
   // let calculatedColumns = 1
   // let width = 100

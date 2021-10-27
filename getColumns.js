@@ -2,7 +2,7 @@
 const getPageLoadWidth = () => {
   // let onLoadAllocatedWidth = document.querySelector("main").clientWidth
   let onLoadAllocatedWidth = document.querySelector("main").clientWidth
-  console.log(onLoadAllocatedWidth)
+  // console.log(onLoadAllocatedWidth)
   return onLoadAllocatedWidth
 }
 const getWidthForCols = (cols, colWidth, gap) => {
@@ -24,7 +24,7 @@ const getColNumbers = (onLoadAllocatedWidth, width, gap) => {
   }
   return cols
 }
-console.log(getColNumbers(getPageLoadWidth(), 120, 5))
+// console.log(getColNumbers(getPageLoadWidth(), 120, 5))
 document.querySelector("ul").style.gridTemplateColumns = `repeat(${getColNumbers(getPageLoadWidth(), 120, 5)}, 1fr)`
 document.querySelector("ul").style.width = document.querySelector("ul").clientWidth
 // document.querySelector("main").style.grid-template-columns = `repeat(${getColNumbers(getPageLoadWidth(), 120, 5)}, 1fr)`

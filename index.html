@@ -28,25 +28,22 @@
           <img class="card-img" alt="image not found">
           <h2 class="name"></h2>
           <p class="card-short-description"></p>
-          <p></p>
-          <a href="#" class="btn btn-primary">See Character</a>
+          <p class="card-description"></p>
+          <button type="button" class="card-btn btn btn-primary" name="button">See Character</button>
           <!-- <input onclick="return myConfirm();" id="delete" type="submit" name="deleteYear" class="btn btn-danger" value="Delete"> -->
           <input id="delete" type="submit" name="deleteYear" class="btn-danger" value="Delete">
+          <!-- <button type="button" class="card-btn" name="button">See Character</button> -->
         </li>
       </template>
       <ul id="target" class="all-characters"></ul>
     </main>
-
     <div class="add-new-main-page">
-      <span class="add-new-page-element"><a href="#" id="add-new-page-element">Go to "add character" page</a></span>
+      <span class="add-new-page-element"><a href="public/html/new_character.html" id="add-new-page-element">Go to "add character" page</a></span>
     </div>
-   
     <script src="getColumns.js" charset="utf-8"></script>
     <script src="getDatabase.js" charset="utf-8"></script>
+    <!-- <script src="getDatabase0.js" charset="utf-8"></script> -->
     <script src="deleteCharacter.js" charset="utf-8"></script>
-
-
-
-
+    <script src="onButtonClick.js" charset="utf-8"></script>
   </body>
 </html>
