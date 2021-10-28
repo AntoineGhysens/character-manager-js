@@ -45,7 +45,7 @@
   border: none;
   flex-direction: column;
   text-align: center;
-  aspect-ratio: 10/16;
+  // aspect-ratio: 5/6;
   transition: transform .2s ease-in-out;
             &:hover {
                 transform: scale(1.05);
@@ -65,12 +65,13 @@
   &-img-view-all{
     width: $card-image-width;
     object-fit: cover;
-    margin: auto;
+    margin: 0 auto;
     border-radius: 1em;
     align-self: flex-start;
   }
   &-short-description{
-    margin: 1em 0;
+    margin-top: 1em;
+    padding-bottom: 1em;
   }
   &-description-main-page{
     display:none
