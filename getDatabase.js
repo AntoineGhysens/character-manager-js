@@ -13,11 +13,9 @@ const cardGen = (array) => {
  ${character.name}
  not found`
     cardContent.children[0].id = character.id
-    // cardContent.appendChild(document.createElement('a'))
     cardContent.children[0].children[4].id = `btn-${index}`
     index += 1
     target.appendChild(cardContent)
-    // console.log(cardContent.children.children)
   })
 }
 
@@ -27,6 +25,10 @@ const displayDB = async () => {
   const output = await response.json()
   const allChars = output
   cardGen(allChars)
+}
+
+displayDB()
+
   let charIndex = 0
   // let currentItem = ce sur quoi je clique
   // loop previousElementSibling == null
@@ -34,7 +36,7 @@ const displayDB = async () => {
   //   charIndex += 1
   //   currentItem = currentItem.previousElementSibling
   // }
-  const btn0 = document.querySelector("#btn-0")
+  // const btn0 = document.querySelector("#btn-0")
   // const btn = document.querySelectorAll(".card-btn")
   // console.log(btn)
   // const btnIndex = (i) => {
@@ -42,17 +44,15 @@ const displayDB = async () => {
     // btn[1].id.slice(4)
   // }
   // console.log(parseInt(btn[1].id.slice(4)))
-  btn0.addEventListener("click", async() => {
-    const selectedCard =  document.importNode(btn0.parentElement, true)
-    target.appendChild(selectedCard)
+  // btn0.addEventListener("click", async() => {
+    // const selectedCard =  document.importNode(btn0.parentElement, true)
+    // target.appendChild(selectedCard)
   // btn.addEventListener("click", async() => {
     // var classList =
     // const selectedCard =  document.importNode(btn.parentElement, true)
     // console.log(btn0.parentElement)
-  });
-}
+  // });
 
-displayDB()
 
 
 // const funk = () => {
