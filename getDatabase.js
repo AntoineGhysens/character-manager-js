@@ -16,19 +16,52 @@ const cardGen = (array) => {
     cardContent.children[0].children[4].id = `btn-${index}`
     index += 1
     target.appendChild(cardContent)
-    // console.log(cardContent.children.children)
   })
 }
 
 
 const displayDB = async () => {
+
+
   const response = await fetch("https://character-database.becode.xyz/characters");
   const output = await response.json()
   const allChars = output
   cardGen(allChars)
+  // flag cardgen
+
+
+
+  let cardBtnAll = document.querySelectorAll(".card-btn")
+  cardBtnAll.forEach(button => {
+    button.addEventListener("click", async() => {
+      let characterCardClone = document.importNode(button.parentElement, true)
+      console.log(characterCardClone.children)
+      characterCardClone.querySelector(".card-name").textContent
+
+
+
+
+    })
+  })
+
+
+
+
 }
 
 displayDB()
+
+// .addEventListener("click", async() => {
+
+
+
+
+
+
+
+
+
+
 
   let charIndex = 0
   // let currentItem = ce sur quoi je clique
