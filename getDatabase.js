@@ -13,6 +13,7 @@ const cardGen = (array) => {
  ${character.name}
  not found`
     cardContent.children[0].id = character.id
+    cardContent.appendChild(document.createElement('a'))
     cardContent.children[0].children[4].id = `btn-${index}`
     index += 1
     target.appendChild(cardContent)
