@@ -19,6 +19,9 @@
 
     <header class="main-page-header">
       <h1 class="main-page-heading">Character manager</h1>
+      <div class="add-new-main-page">
+        <span class="add-new-page-element">Add new character</span>
+      </div>
       <!-- <input type="text" name="charsearch" placeholder="search for characters" class="searchbar-main-page"> -->
     </header>
 
@@ -26,11 +29,11 @@
       <template id="tpl-card">
         <li class="card" id="all-characters">
           <img class="card-img-view-all" alt="image not found">
-          <h2 class="name"></h2>
+          <h2 class="card-name"></h2>
           <p class="card-short-description"></p>
           <p class="card-description-main-page"></p>
-          <a href="public/html/single_character.html" class="card-btn btn btn-primary">See Character</a>
-          <!-- <button type="button" class="card-btn btn btn-primary" name="button">See Character</button> -->
+          <a href="public/html/single_character.html" class="card-btn btn btn-primary viewMore">See character</a>
+          <!-- <button type="button" class="card-btn btn btn-primary viewMore" name="button">See Character</button> -->
           <!-- <input onclick="return myConfirm();" id="delete" type="submit" name="deleteYear" class="btn btn-danger" value="Delete"> -->
           <!-- <button onclick="return confirm('Are you sure you want to delete?');"id="delete" type="submit" name="deleteYear" class="btn btn-danger" value="Delete">Delete -->
           <!-- <button type="button" class="card-btn" name="button">See Character</button> -->
@@ -38,12 +41,10 @@
       </template>
       <ul id="target" class="all-characters"></ul>
     </main>
-    <div class="add-new-main-page">
-      <span class="add-new-page-element"><a href="public/html/new_character.html" id="add-new-page-element">Go to "add character" page</a></span>
-    </div>
     <script src="getColumns.js" charset="utf-8"></script>
     <script src="getDatabase.js" charset="utf-8"></script>
     <script src="deleteCharacter.js" charset="utf-8"></script>
+    <script src="getSingleCharacter.js" type="text/javascript"></script>
 
   </body>
 </html>

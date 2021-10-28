@@ -1,7 +1,7 @@
 .main-page{
   background-image: linear-gradient(to right, #645097, #d7555d);
   min-height: 450px;
-  padding: 0 7.5vw
+  padding: 0 7.5vw 4rem;
 }
 .main-page h1{
   display: inline-block;
@@ -35,7 +35,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     // width: ($card-width * 12 + 11 *$gap);
-    gap: $gap;
+    row-gap: 1.875rem;
     width: 100%;
 }
 
@@ -45,6 +45,11 @@
   border: none;
   flex-direction: column;
   text-align: center;
+  // aspect-ratio: 5/6;
+  transition: transform .2s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+            }
   [alt]{
     width: $card-image-width;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -54,20 +59,36 @@
     white-space: pre;
     margin: 0 auto;
   }
+  &-name{
+    font-size: 1.25rem;
+    margin-top: 1em
+  }
   &-img-view-all{
     width: $card-image-width;
     object-fit: cover;
-    margin: auto;
+    margin: 0 auto;
     border-radius: 1em;
+    align-self: flex-start;
   }
   &-short-description{
-    font-size: 0.5em;
+    margin-top: 1em;
+    padding-bottom: 1em;
   }
   &-description-main-page{
     display:none
   }
   &-btn{
     margin-top: auto;
+    &:hover {
+      background-color: rgb(18, 14, 243);
+    }
+
+    &:active {
+      background-color: rgb(18, 14, 243);
+      box-shadow: 0 5px, grey;
+      transform: translateY(4px);
+    }
+
   }
 }
 

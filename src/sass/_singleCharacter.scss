@@ -1,0 +1,68 @@
+.main-single-character {
+    padding: 100px 0;
+}
+
+body {
+  background-image: linear-gradient(to right, #645097, #d7555d);
+  font-family: "Orbitron";
+
+  .title-single-character {
+    text-align: left;
+    font-size: 50px;
+    color: white;
+    border-bottom: 5px solid white;
+    margin-bottom: 20px;
+  }
+
+  .container-single-character {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    height: 700px;
+    margin: auto;
+    background-image: linear-gradient(
+      to right,
+      rgb(180, 176, 176),
+      rgb(83, 74, 74)
+    );
+    border-radius: 8px;
+    box-shadow: 10px 5px 5px rgb(56, 55, 55);
+
+
+   .delete-character {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+
+   }
+    
+    
+    .buttonDeleteCharacter {
+      margin: 0 1em;
+      border: 0;
+      line-height: 2.5;
+      padding: 17px 40px;
+      font-size: 15px;
+      text-transform: capitalize;
+      text-align: center;
+      color: #fff;
+      border-radius: 5px;
+      background-color: #d7555d;
+      font-weight: 600;
+      margin-top: 500px;
+
+
+      &:hover {
+        background-color: black;
+      }
+
+      &:active {
+        background-color: black;
+        box-shadow: 0 5px, grey;
+        transform: translateY(4px);
+      }
+    }
+  }
+
+ }
