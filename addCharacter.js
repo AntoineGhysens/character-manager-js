@@ -19,47 +19,47 @@ imgInput.addEventListener('change', function (e) {
                 // Show resized image in preview element
                 let dataurl = canvas.toDataURL(imageFile.type, 1);
                 document.getElementById("image").src = dataurl;
-                
+
             }
             img.src = e.target.result;
             document.getElementById("image").style.display = 'block';
         }
         reader.readAsDataURL(imageFile);
-        
+
     }
 });
 
 
 const src = "https://character-database.becode.xyz/characters";
 
-  document.querySelector("#buttonChanges").addEventListener("click", async() => {
-    
-      const name = document.querySelector("#new-character-name").value;
-      const shortDescription = document.querySelector("#shortDescription").value;
-      const description = document.querySelector("#description").value; 
-      const image = document.querySelector("#image").src.slice(23, document.querySelector("#image").src.lenght);
-      
-     
-    
-          const result = await fetch(src, {
-              
-              method: 'POST',
-              headers: {
-                  "Content-Type": "application/json; charset=UTF-8",
-              },
-              body: JSON.stringify({
-                  name: name,
-                  shortDescription: shortDescription,
-                  description: description,
-                  image: image
-                  
-                 
+document.querySelector("#buttonChanges").addEventListener("click", async () => {
 
-                 
-              })
-          });
-          console.log(await result.json()); 
-          
+    const name = document.querySelector("#new-character-name").value;
+    const shortDescription = document.querySelector("#shortDescription").value;
+    const description = document.querySelector("#description").value;
+    const image = document.querySelector("#image").src.slice(23, document.querySelector("#image").src.lenght);
+
+
+
+    const result = await fetch(src, {
+
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json; charset=UTF-8",
+        },
+        body: JSON.stringify({
+            name: name,
+            shortDescription: shortDescription,
+            description: description,
+            image: image
+
+
+
+
+        })
+    });
+    console.log(await result.json());
+
 });
 
 

@@ -44,6 +44,10 @@
   padding: 10px;
   border: none;
   flex-direction: column;
+  transition: transform .2s ease-in-out;
+            &:hover {
+                transform: scale(1.10);
+            }
   [alt]{
     width: $card-width;
     aspect-ratio: 1/1;
@@ -52,6 +56,7 @@
     vertical-align: bottom;
     background: darken(white, 10%);
     white-space: pre;
+    
   }
   &-img-top{
     object-fit: cover;
@@ -64,6 +69,16 @@
   } 
   &-btn{
     margin-top: auto;
+    &:hover {
+      background-color: rgb(18, 14, 243);
+    }
+
+    &:active {
+      background-color: rgb(18, 14, 243);
+      box-shadow: 0 5px, grey;
+      transform: translateY(4px);
+    }
+    
   }
 }
 

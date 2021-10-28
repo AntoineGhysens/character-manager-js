@@ -11,28 +11,37 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../../src/sass/main.css" />
-     <title>Single Character</title>
-
+    <title>Single Character</title>
   </head>
   <body>
-
-
     <main class="main-single-character">
       <div class="title">Single Character</div>
 
-        <div class="container-single-character">
+      <div class="container-single-character">
+          
+        <template id="tpl-card">
+          <li class="card" id="all-characters">
+            <img class="card-img" alt="image not found" />
+            <h2 class="name"></h2>
+            <p class="card-short-description"></p>
+            <p class="card-description"></p>
+          </li>
+        </template>
 
-       
-
-            <div class="delete-character">
-            <button type="button" class="buttonDeleteCharacter" id="buttonDeleteCharacter">Delete Character</button>
-            </div>
-
+        <div class="delete-character">
+          <button
+            type="button"
+            class="buttonDeleteCharacter"
+            id="buttonDeleteCharacter"
+          >
+            Delete Character
+          </button>
         </div>
-
+      </div>
     </main>
   </body>
 
   <script src="../../deleteCharacter.js" type="text/javascript"></script>
 
+  <script src="../../getSingleCharacter.js" type="text/javascript"></script>
 </html>
