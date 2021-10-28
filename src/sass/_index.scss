@@ -46,7 +46,7 @@
   flex-direction: column;
   transition: transform .2s ease-in-out;
             &:hover {
-                transform: scale(1.10);
+                transform: scale(1.05);
             }
   [alt]{
     width: $card-image-width;
@@ -55,7 +55,7 @@
     font-size: 12px;
     background: darken(white, 10%);
     white-space: pre;
-    margin: 0 auto;
+ 
   }
   &-img-view-all{
     width: $card-image-width;
