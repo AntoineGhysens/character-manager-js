@@ -1,4 +1,4 @@
-document.getElementById('delete').addEventListener("click", async () => {
+document.getElementById('buttonDeleteCharacter').addEventListener("click", async () => {
     let action = confirm('Are you sure you want to delete this character');
   
     if (action != true) {
