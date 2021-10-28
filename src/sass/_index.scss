@@ -45,6 +45,7 @@
   border: none;
   flex-direction: column;
   text-align: center;
+  aspect-ratio: 10/16;
   transition: transform .2s ease-in-out;
             &:hover {
                 transform: scale(1.05);
@@ -66,10 +67,10 @@
     object-fit: cover;
     margin: auto;
     border-radius: 1em;
+    align-self: flex-start;
   }
   &-short-description{
     margin: 1em 0;
-    
   }
   &-description-main-page{
     display:none
