@@ -1,7 +1,7 @@
 .main-page{
   background-image: linear-gradient(to right, #645097, #d7555d);
   min-height: 450px;
-  padding: 0 7.5vw
+  padding: 0 7.5vw 4rem;
 }
 .main-page h1{
   display: inline-block;
@@ -35,7 +35,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     // width: ($card-width * 12 + 11 *$gap);
-    gap: $gap;
+    row-gap: 1.875rem;
     width: 100%;
 }
 
@@ -55,7 +55,7 @@
     font-size: 12px;
     background: darken(white, 10%);
     white-space: pre;
- 
+
   }
   &-img-view-all{
     width: $card-image-width;
@@ -79,7 +79,7 @@
       box-shadow: 0 5px, grey;
       transform: translateY(4px);
     }
-    
+
   }
 }
 
