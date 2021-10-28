@@ -6,17 +6,18 @@ const cardGen = (array) => {
     const cardContent = document.importNode(tpl.content, true);
     cardContent.querySelector(".name").textContent = character.name
     cardContent.querySelector(".card-short-description").textContent  = character.shortDescription
-    cardContent.querySelector(".card-description").textContent  = character.description
-    cardContent.querySelector(".card-img").src = "data:image/png;base64, " +character.image
-    cardContent.querySelector(".card-img").alt =
+    cardContent.querySelector(".card-description-main-page").textContent  = character.description
+    cardContent.querySelector(".card-img-view-all").src = "data:image/png;base64, " +character.image
+    cardContent.querySelector(".card-img-view-all").alt =
 ` image for
  ${character.name}
  not found`
     cardContent.children[0].id = character.id
-    cardContent.appendChild(document.createElement('a'))
+    // cardContent.appendChild(document.createElement('a'))
     cardContent.children[0].children[4].id = `btn-${index}`
     index += 1
     target.appendChild(cardContent)
+    // console.log(cardContent.children.children)
   })
 }
 
@@ -29,10 +30,10 @@ const displayDB = async () => {
   let charIndex = 0
   // let currentItem = ce sur quoi je clique
   // loop previousElementSibling == null
-  if(currentItem.previousElementSibling == null){
-    charIndex += 1
-    currentItem = currentItem.previousElementSibling
-  }
+  // if(currentItem.previousElementSibling == null){
+  //   charIndex += 1
+  //   currentItem = currentItem.previousElementSibling
+  // }
   const btn0 = document.querySelector("#btn-0")
   // const btn = document.querySelectorAll(".card-btn")
   // console.log(btn)

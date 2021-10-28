@@ -41,27 +41,29 @@
 
 .card{
   width: $card-width + 20px;
-  padding: 10px;
+  padding: 20px 10px 10px;
   border: none;
   flex-direction: column;
   [alt]{
-    width: $card-width;
-    aspect-ratio: 1/1;
+    width: $card-image-width;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    aspect-ratio: 1/1;
     font-size: 12px;
-    vertical-align: bottom;
     background: darken(white, 10%);
     white-space: pre;
+    margin: 0 auto;
   }
-  &-img-top{
+  &-img-view-all{
+    width: $card-image-width;
     object-fit: cover;
+    margin: auto;
   }
   &-short-description{
     font-size: 0.5em;
   }
-  &-description{
+  &-description-main-page{
     display:none
-  } 
+  }
   &-btn{
     margin-top: auto;
   }
