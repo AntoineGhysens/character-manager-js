@@ -44,6 +44,7 @@
   padding: 20px 10px 10px;
   border: none;
   flex-direction: column;
+  text-align: center;
   transition: transform .2s ease-in-out;
             &:hover {
                 transform: scale(1.05);
@@ -55,15 +56,19 @@
     font-size: 12px;
     background: darken(white, 10%);
     white-space: pre;
-
+  }
+  &-name{
+    font-size: 1.25rem;
+    margin-top: 1em
   }
   &-img-view-all{
     width: $card-image-width;
     object-fit: cover;
     margin: auto;
+    border-radius: 1em;
   }
   &-short-description{
-    font-size: 0.5em;
+    margin-top: 1em;
   }
   &-description-main-page{
     display:none

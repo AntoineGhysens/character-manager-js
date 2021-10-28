@@ -4,7 +4,7 @@ const cardGen = (array) => {
   let index = 0
   array.forEach(character => {
     const cardContent = document.importNode(tpl.content, true);
-    cardContent.querySelector(".name").textContent = character.name
+    cardContent.querySelector(".card-name").textContent = character.name
     cardContent.querySelector(".card-short-description").textContent  = character.shortDescription
     cardContent.querySelector(".card-description-main-page").textContent  = character.description
     cardContent.querySelector(".card-img-view-all").src = "data:image/png;base64, " +character.image
