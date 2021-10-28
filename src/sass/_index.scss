@@ -49,7 +49,11 @@
   transition: transform .2s ease-in-out;
             &:hover {
                 transform: scale(1.05);
-            }
+                cursor: pointer;
+                box-shadow: 7px 7px 5px #070707;
+               
+              }
+            
   [alt]{
     width: $card-image-width;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -70,6 +74,7 @@
     align-self: flex-start;
   }
   &-short-description{
+    color:grey;
     margin-top: 1em;
     padding-bottom: 1em;
   }
@@ -97,10 +102,23 @@
   margin: 6vh auto 4vh;
 }
 .add-new-page-element{
-  padding: 1em 3em;
+  font-size: 30px;
+  padding: 10px 2em;
   background-color: #4b7cfc;
   color: white;
   border-radius: 0.5em;
+  margin-right: 15em;
+ 
+  transition: transform .2s ease-in-out;
+  &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+      box-shadow: 7px 7px 5px #070707;
+  }
+      &:active {
+        box-shadow: 0 5px, grey;
+        transform: translateY(4px);
+    }
   a:visited{
     color: white;
   }
